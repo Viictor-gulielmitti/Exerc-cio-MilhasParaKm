@@ -12,8 +12,8 @@ namespace MILHAS
             Console.WriteLine ( " Digite a medida em milhas: " );
             medida = Console.ReadLine();
             Convert.ToDouble ( medida );
-            Milhas = 1609;
-            Console.WriteLine($" A medida em km é: { Milhas }");
+            Milhas = 1.609;
+            Console.WriteLine($" A medida em km é: { Convert.ToDouble(medida) * Milhas }");
         }
     }
 }
